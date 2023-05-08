@@ -1,0 +1,91 @@
+.sidebar {
+    
+    flex: 1;
+    height: 1150px;
+    /* height: calc(100vh - 50px); */
+    background-color: rgb(108, 32, 207);
+    position: sticky;
+    top: 50px;
+  }
+  
+  .sidebarWrapper {
+    padding: 20px;
+    color: #df3434;
+  }
+  
+  .sidebarMenu {
+    margin-bottom: 10px;
+  }
+  
+  .sidebarTitle {
+    font-size: 13px;
+    color: rgb(18, 172, 172);
+  }
+  
+  .sidebarList {
+    list-style: none;
+    padding: 5px;
+  }
+  
+  .sidebarListItem {
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color:black;
+  }
+  
+  .sidebarListItem.active,
+  .sidebarListItem:hover {
+    background-color: rgb(240, 240, 255);
+  }
+  
+  .sidebarIcon{
+    background-color: burlywood;
+      margin-right: 2px;
+      padding-left: 2px;
+      font-size: 20px !important;
+  }
+
+
+
+
+
+
+
+ body {
+  margin: 0;
+}
+
+.container {
+  margin: 0;
+  height: 100vh;
+}
+
+  .left-column {
+    height: 100vh;
+    float: left;
+    width: 25%;
+    background-color: #f2f2f2;
+    /* height: 100vh; */
+    margin-left: -10px;
+
+  }
+  
+  /* Style for the right column */
+  .right-column {
+    float: left;
+    width: 75%;
+    background-color: #fff;
+    height: 100vh;
+  }
+  
+  /* Clearfix for the parent container */
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+ 
