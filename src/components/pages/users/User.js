@@ -108,106 +108,72 @@ const handleDeleteUser=async(userId)=>{
      
 
 <div>
-  <div className="sidebar">
-    <div className="sidebarWrapper">
-      <div className="sidebarMenu">
-        <h3 className="sidebarTitle">Dashboard</h3>
-        <ul className="sidebarList">
-          <Link to="/home" className="link">
-          <li className="sidebarListItem active">
-          {/* //  onClick={handleMessageHomeClick}> */}
-            <LineStyle className="sidebarIcon" />
-            Home
-          </li>
-          </Link>
-          <Link to="/products" className="link">
-          <li className="sidebarListItem">
-
-          {/* //  onClick={handleMessageAnalyticsClick}> */}
-          
-            <Timeline className="sidebarIcon" />
-            Products
-          </li>
-        </Link>
-
-
-        <Link to="/sales" className="link">
-          <li className="sidebarListItem"
-          //  onClick={handleMessageSalesClick}
-          >
-            <TrendingUp className="sidebarIcon" />
-            Sales
-          </li>
-          </Link>
-
-
-
-        </ul>
-      </div>
-      <div className="sidebarMenu">
-        <h3 className="sidebarTitle">Quick Menu</h3>
-        <ul className="sidebarList">
-          <Link to="/users" className="link">
-            <li className="sidebarListItem">
-              <PermIdentity className="sidebarIcon" />
-              Users
+  
+  
+<div>
+    <div className="sidebar">
+      <div className="sidebarWrapper">
+        <div className="sidebarMenu">
+          <h3 className="sidebarTitle">Dashboard</h3>
+          <ul className="sidebarList">
+            <Link to="/home" className="link">
+            <li className="sidebarListItem active">
+            {/* //  onClick={handleMessageHomeClick}> */}
+              <LineStyle className="sidebarIcon" />
+              Home
             </li>
-          </Link>
-          <Link to="/products" className="link">
-            <li className="sidebarListItem">
-              <Storefront className="sidebarIcon" />
-              Products
-            </li>
-          </Link>
-          <Link to="/transactions" className="link">
-          <li className="sidebarListItem">
-            <AttachMoney className="sidebarIcon" />
-            Transactions
-          </li>
-          </Link>
+            </Link>
+           
 
-          <Link to="/reports" className="link">
-          <li className="sidebarListItem">
-            <BarChart className="sidebarIcon" />
-            Reports
-          </li>
-          </Link>
-        </ul>
+
+
+          </ul>
+        </div>
+        <div className="sidebarMenu">
+          <h3 className="sidebarTitle">Quick Menu</h3>
+          <ul className="sidebarList">
+            <Link to="/users" className="link">
+              <li className="sidebarListItem">
+                <PermIdentity className="sidebarIcon" />
+                Users
+              </li>
+            </Link>
+            
+           
+          </ul>
+        </div>
+        <div className="sidebarMenu">
+          <h3 className="sidebarTitle">Notifications</h3>
+          <ul className="sidebarList">
+          <Link to="/customorder" className="link">
+            <li className="sidebarListItem">
+              <MailOutline className="sidebarIcon" />
+              Print on order
+            </li>
+            </Link>
+
+            <Link to="/staticorders" className="link">
+
+            <li className="sidebarListItem">
+              <DynamicFeed className="sidebarIcon" />
+              Static orders
+            </li>
+            </Link>
+           
+          </ul>
+        </div>
+       
       </div>
-      <div className="sidebarMenu">
-        <h3 className="sidebarTitle">Notifications</h3>
-        <ul className="sidebarList">
-          <li className="sidebarListItem">
-            <MailOutline className="sidebarIcon" />
-            Mail
-          </li>
-          <li className="sidebarListItem">
-            <DynamicFeed className="sidebarIcon" />
-            Feedback
-          </li>
-          <li className="sidebarListItem">
-            <ChatBubbleOutline className="sidebarIcon" />
-            Messages
-          </li>
-        </ul>
-      </div>
-      <div className="sidebarMenu">
-        <h3 className="sidebarTitle">Staff</h3>
-        <ul className="sidebarList">
-          <li className="sidebarListItem">
-            <WorkOutline className="sidebarIcon" />
-            Manage
-          </li>
-          <li className="sidebarListItem">
-            <Timeline className="sidebarIcon" />
-            Analytics
-          </li>
-        </ul>
-      </div>
+    </div>
+    
+   </div>
+
+
+
     </div>
   </div>
   
- </div>
+ 
 
 
 
@@ -215,9 +181,6 @@ const handleDeleteUser=async(userId)=>{
 
 
 
-
-
-    </div>
     <div className="right-column">
 tble
     <table>
@@ -226,7 +189,7 @@ tble
       <th>Name</th>
       <th>Email</th>
       <th>Id</th>
-      <th>Delete user</th>
+      {/* <th>Delete user</th> */}
     </tr>
   </thead>
   <tbody>
@@ -237,10 +200,10 @@ tble
       <tr key={user._id}>
         <td>{user.name}</td>
         <td>{user.email}</td>
-
+{/* 
         <td>
           <button onClick={() => handleDeleteUser(user.id)}>Delete</button>
-        </td>
+        </td> */}
       </tr>
     ))}
 

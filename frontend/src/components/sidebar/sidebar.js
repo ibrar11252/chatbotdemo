@@ -83,7 +83,25 @@ export default function Sidebar() {
               Home
             </li>
             </Link>
-           
+            <Link to="/products" className="link">
+            <li className="sidebarListItem">
+
+            {/* //  onClick={handleMessageAnalyticsClick}> */}
+            
+              <Timeline className="sidebarIcon" />
+              Products
+            </li>
+          </Link>
+
+
+          <Link to="/sales" className="link">
+            <li className="sidebarListItem"
+             onClick={handleMessageSalesClick}
+            >
+              <TrendingUp className="sidebarIcon" />
+              Sales
+            </li>
+            </Link>
 
 
 
@@ -98,8 +116,25 @@ export default function Sidebar() {
                 Users
               </li>
             </Link>
-            
-           
+            <Link to="/products" className="link">
+              <li className="sidebarListItem">
+                <Storefront className="sidebarIcon" />
+                Products
+              </li>
+            </Link>
+            <Link to="/transactions" className="link">
+            <li className="sidebarListItem">
+              <AttachMoney className="sidebarIcon" />
+              Transactions
+            </li>
+            </Link>
+
+            <Link to="/reports" className="link">
+            <li className="sidebarListItem">
+              <BarChart className="sidebarIcon" />
+              Reports
+            </li>
+            </Link>
           </ul>
         </div>
         <div className="sidebarMenu">
@@ -119,10 +154,26 @@ export default function Sidebar() {
               Static orders
             </li>
             </Link>
-           
+            <li className="sidebarListItem">
+              <ChatBubbleOutline className="sidebarIcon" />
+              Messages
+            </li>
           </ul>
         </div>
-       
+        <div className="sidebarMenu">
+          <h3 className="sidebarTitle">Staff</h3>
+          <ul className="sidebarList">
+            <li className="sidebarListItem">
+              <WorkOutline className="sidebarIcon" />
+              Manage
+            </li>
+            <li className="sidebarListItem">
+              <Timeline className="sidebarIcon" />
+              Analytics
+            </li>
+            
+          </ul>
+        </div>
       </div>
     </div>
     
@@ -139,7 +190,12 @@ export default function Sidebar() {
       </div>
       <div className="right-column">
 
+{/* 
+      {showHome && <Home />}
 
+  {showAnalytics && <Product />}
+
+  {showSales && <Sale />} */}
       
       </div>
     </div>

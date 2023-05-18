@@ -1,0 +1,80 @@
+
+
+  /* yaha se comnt kia */
+   button.chatbot-close-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    cursor: pointer;
+    background-color: yellow !important;
+  }
+
+  button{
+    background-color: red !important;
+    
+
+  }
+  
+
+  .chatbot-container {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background-color: goldenrod;
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 500px;
+
+  }
+  .react-chatbot-kit-chat-container{
+    position: relative;
+    width: 325px;
+  }
+
+
+  .react-chatbot-kit-user-chat-message-container{
+
+  }
+  .chatbot-container .rcw-sender {
+    background-color: red;
+  }
+  
+  .chatbot-container .header {
+    padding: 10px;
+    background-color: rgb(39, 206, 39);
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .chatbot-container .messages-container {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  .message-input-container {
+    background-color: lightgray;
+  }
+  
+  .chatbot-container .user-input-container {
+    padding: 10px;
+    border-top: 1px solid green;
+    background-color: green;
+  }
+
+  .chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
